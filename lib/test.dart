@@ -9,14 +9,10 @@ class TestScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final screeHeight = MediaQuery.of(context).size.height;
     final screenWidth=MediaQuery.of(context).size.width;
-    
-
-   
     return Scaffold(
       backgroundColor: ColorManager.black,
       appBar: _getAppBarDesign(),
       extendBodyBehindAppBar: true,
-      //y3ne nazeyn fe app bar bs 3amlyn l body wa5d mkano w ana 3aml app bar 34an at7km fl l status
       body: _getBodyDesign(screeHeight:screeHeight , screenWidth:screenWidth),
     );
   }

@@ -4,7 +4,7 @@ import 'package:responsive_screen/test.dart';
 import 'package:responsive_screen/test.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp( DevicePreview(builder:(context)=>MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      builder:DevicePreview.appBuilder,
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
